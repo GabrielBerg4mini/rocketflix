@@ -1,0 +1,132 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: var(--background);
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  padding-top: 7.9rem;
+}
+header {
+  text-align: center;
+}
+.title {
+  font-size: 1.5rem;
+  color: var(--title);
+  font-weight: bold;
+}
+.logo {
+  width: 80px;
+  height: 60;
+}
+
+#film {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--subtitle);
+}
+.movie-poster {
+  border-radius: 0.2rem;
+  box-shadow: 0 0 1rem var(--shadow);
+  width: 10.6875rem;
+  height: 15.1875rem;
+}
+.movie-title {
+  margin: 0.6rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.movie-description {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  padding: 1rem 0.3rem;
+  gap: 1rem;
+}
+.find-movie {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background: var(--bg-button);
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.logo-button {
+  width: 30px;
+  height: 20px;
+}
+footer p {
+  text-align: center;
+  color: var(--subtitle);
+  font-size: 0.8rem;
+}
+@media (min-width: 800px) {
+  .container {
+    height: 100vh;
+  }
+  .wrapper {
+    width: 46rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 2.5rem;
+    color: var(--title);
+  }
+  .logo {
+    width: 87px;
+    height: 63;
+  }
+  #film {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .movie-poster {
+    width: 10.6875rem;
+    height: 15.1875rem;
+  }
+  .movie-title {
+    font-size: 1.2rem;
+  }
+  .movie-description {
+    font-size: 1rem;
+  }
+  .find-movie {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.6s;
+  }
+  .find-movie:hover {
+    box-shadow: 0 0 1rem var(--shadow);
+    transform: scale(1.1);
+  }
+  footer p {
+    width: 30rem;
+    font-size: 1rem;
+  }
+}
